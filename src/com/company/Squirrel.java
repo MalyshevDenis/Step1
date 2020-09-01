@@ -4,15 +4,6 @@ package com.company;
 import java.util.Scanner;
 
 public class Squirrel {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
-
-        int factorial = Squirrel.squirrel(N);
-
-        int result = Squirrel.firstDigit(factorial);
-        System.out.println(result);
-    }
 
 
     public static int squirrel(int N) {
