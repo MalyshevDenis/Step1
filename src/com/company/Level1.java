@@ -1,9 +1,9 @@
 package com.company;
 
 
-import java.util.Scanner;
 
-public class Squirrel {
+
+public class Level1 {
 
 
     public static int squirrel(int N) {
