@@ -1,14 +1,12 @@
 package com.company;
 
 
-
-
 public class Level1 {
 
 
     public static int squirrel(int N) {
-        int factorial = N;
-        for (int i = 1; i < N; i++) {
+        int factorial = 1;
+        for (int i = 1; i <= N; i++) {
             factorial = factorial * i;
         }
         return factorial;
