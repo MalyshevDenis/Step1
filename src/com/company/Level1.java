@@ -4,18 +4,18 @@ package com.company;
 public class Level1 {
 
 
-    public static int squirrel(int N) {
-        int factorial = 1;
+    public static int factorial(int N) {
+        int value = 1;
         for (int i = 1; i <= N; i++) {
-            factorial = factorial * i;
+            value = value * i;
         }
-        return factorial;
+        return value;
     }
 
-    public static int firstDigit(int factorial) {
+    public static int squirrel(int value) {
         int result = 1;
-        for (int i = 1; i <= factorial; i = i * 10) {
-            result = factorial / i;
+        for (int i = 1; i <= value; i = i * 10) {
+            result = value / i;
         }
         return result;
     }
