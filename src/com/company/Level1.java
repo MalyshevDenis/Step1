@@ -3,20 +3,32 @@ package com.company;
 
 public class Level1 {
 
+    static int odometer(int[] oksana) {
 
-    public static int squirrel(int N) {
+        int summaChetnih = 0;
+        int summaNeChetnih = 0;
+        for (int i = 0; i < oksana.length; i++) {
+            if (oksana[i] % 2 == 0) {
+                summaChetnih = summaChetnih + oksana[i];
 
-        int value = 1;
-        for (int i = 1; i <= N; i++) {
-            value = value * i;
+            }
+
         }
 
-        int result = 1;
-        for (int i = 1; i <= value; i = i * 10) {
-            result = value / i;
+
+        for (int i = 0; i < oksana.length; i++) {
+            if (oksana[i] % 2 != 0) {
+                summaNeChetnih = summaNeChetnih + oksana[i];
+            }
+
         }
-        return result;
+
+        int result = summaChetnih * summaNeChetnih;
+        return (result);
+
+
     }
+
 
 
 }
